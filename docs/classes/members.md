@@ -35,7 +35,7 @@
 
 \+ **new Members**(`client`: ClientResource["client"]): *[Members](members.md)*
 
-*Defined in [member.ts:4](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L4)*
+Defined in member.ts:4
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 *Implementation of [ClientResource](../interfaces/clientresource.md).[client](../interfaces/clientresource.md#client)*
 
-*Defined in [member.ts:4](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L4)*
+Defined in member.ts:4
 
 ## Methods
 
@@ -61,7 +61,7 @@ Name | Type |
 
 ▸ **get**(`memberId`: string): *Promise‹Response‹››*
 
-*Defined in [member.ts:17](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L17)*
+Defined in member.ts:17
 
 Show's a member's details
 
@@ -79,7 +79,7 @@ ___
 
 ▸ **list**(): *Promise‹Response‹››*
 
-*Defined in [member.ts:11](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L11)*
+Defined in member.ts:11
 
 List Members
 
@@ -91,7 +91,7 @@ ___
 
 ▸ **loan**(`memberId`: string, `loanId`: string): *Promise‹Response‹››*
 
-*Defined in [member.ts:29](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L29)*
+Defined in member.ts:29
 
 Show's a member's loan
 
@@ -110,7 +110,7 @@ ___
 
 ▸ **loans**(`memberId`: string): *Promise‹Response‹››*
 
-*Defined in [member.ts:23](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L23)*
+Defined in member.ts:23
 
 List a member's loans
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **saving**(`memberId`: string, `savingId`: string): *Promise‹Response‹››*
 
-*Defined in [member.ts:41](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L41)*
+Defined in member.ts:41
 
 Show's a member's saving
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **savings**(`memberId`: string): *Promise‹Response‹››*
 
-*Defined in [member.ts:35](https://github.com/mainanick/kwara/blob/286defe/lib/member.ts#L35)*
+Defined in member.ts:35
 
 List a member's savings.
 

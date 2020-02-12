@@ -23,4 +23,4 @@
 
 • **client**: *[Client](client.md)*
 
-*Defined in [types.ts:24](https://github.com/mainanick/kwara/blob/286defe/lib/types.ts#L24)*
+Defined in types.ts:24

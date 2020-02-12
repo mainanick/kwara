@@ -44,7 +44,7 @@
 
 \+ **new Kwara**(`clientId`: string, `clientSecret`: string, `live`: boolean, `clientOptions`: object): *[Kwara](kwara.md)*
 
-*Defined in [index.ts:17](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L17)*
+Defined in index.ts:17
 
 **Parameters:**
 
@@ -68,7 +68,7 @@ Name | Type | Default |
 
 • **clientId**: *string*
 
-*Defined in [index.ts:12](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L12)*
+Defined in index.ts:12
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 • **clientSecret**: *string*
 
-*Defined in [index.ts:13](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L13)*
+Defined in index.ts:13
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 • **emitter**: *EventEmitter*
 
-*Defined in [index.ts:15](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L15)*
+Defined in index.ts:15
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 • **live**: *boolean*
 
-*Defined in [index.ts:14](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L14)*
+Defined in index.ts:14
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 *Implementation of [Client](../interfaces/client.md).[members](../interfaces/client.md#members)*
 
-*Defined in [index.ts:16](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L16)*
+Defined in index.ts:16
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 *Implementation of [Client](../interfaces/client.md).[options](../interfaces/client.md#options)*
 
-*Defined in [index.ts:17](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L17)*
+Defined in index.ts:17
 
 ## Accessors
 
@@ -120,7 +120,7 @@ ___
 
 • **get url**(): *"api.kwara.com" | "api.sandbox.kwara.com"*
 
-*Defined in [index.ts:32](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L32)*
+Defined in index.ts:32
 
 **Returns:** *"api.kwara.com" | "api.sandbox.kwara.com"*
 
@@ -130,7 +130,7 @@ ___
 
 ▸ **getContentType**(): *string*
 
-*Defined in [index.ts:41](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L41)*
+Defined in index.ts:41
 
 **Returns:** *string*
 
@@ -140,7 +140,7 @@ ___
 
 ▸ **on**(`event`: string, `listeners`: function): *void*
 
-*Defined in [index.ts:38](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L38)*
+Defined in index.ts:38
 
 **Parameters:**
 
@@ -164,7 +164,7 @@ ___
 
 ▸ **request**(`uri`: string, `requestOptions`: undefined): *Promise‹Response‹››*
 
-*Defined in [index.ts:63](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L63)*
+Defined in index.ts:63
 
 **Parameters:**
 
@@ -181,7 +181,7 @@ ___
 
 ▸ **requestAccessToken**(): *Promise‹Response‹››*
 
-*Defined in [index.ts:44](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L44)*
+Defined in index.ts:44
 
 **Returns:** *Promise‹Response‹››*
 
@@ -191,7 +191,7 @@ ___
 
 ▸ **requestGet**(`uri`: string, `requestOptions`: object): *Promise‹Response‹››*
 
-*Defined in [index.ts:66](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L66)*
+Defined in index.ts:66
 
 **Parameters:**
 
@@ -208,7 +208,7 @@ ___
 
 ▸ **requestPost**(`uri`: string, `requestOptions`: object): *Promise‹Response‹››*
 
-*Defined in [index.ts:69](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L69)*
+Defined in index.ts:69
 
 **Parameters:**
 

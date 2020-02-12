@@ -33,7 +33,7 @@
 
 • **members**: *[ClientResource](clientresource.md)*
 
-*Defined in [types.ts:19](https://github.com/mainanick/kwara/blob/286defe/lib/types.ts#L19)*
+Defined in types.ts:19
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **options**: *object*
 
-*Defined in [types.ts:4](https://github.com/mainanick/kwara/blob/286defe/lib/types.ts#L4)*
+Defined in types.ts:4
 
 #### Type declaration:
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **request**(`uri`: string, `requestOptions?`: RequestInit | undefined): *Promise‹Response›*
 
-*Defined in [types.ts:7](https://github.com/mainanick/kwara/blob/286defe/lib/types.ts#L7)*
+Defined in types.ts:7
 
 **Parameters:**
 
@@ -70,7 +70,7 @@ ___
 
 ▸ **requestGet**(`uri`: string, `requestOptions?`: RequestInit | undefined): *Promise‹Response›*
 
-*Defined in [types.ts:11](https://github.com/mainanick/kwara/blob/286defe/lib/types.ts#L11)*
+Defined in types.ts:11
 
 **Parameters:**
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **requestPost**(`uri`: string, `requestOptions?`: RequestInit | undefined): *Promise‹Response›*
 
-*Defined in [types.ts:15](https://github.com/mainanick/kwara/blob/286defe/lib/types.ts#L15)*
+Defined in types.ts:15
 
 **Parameters:**
 

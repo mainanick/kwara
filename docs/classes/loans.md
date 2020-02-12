@@ -31,7 +31,7 @@
 
 \+ **new Loans**(`client`: ClientResource["client"]): *[Loans](loans.md)*
 
-*Defined in [loans.ts:4](https://github.com/mainanick/kwara/blob/286defe/lib/loans.ts#L4)*
+Defined in loans.ts:4
 
 **Parameters:**
 
@@ -49,7 +49,7 @@ Name | Type |
 
 *Implementation of [ClientResource](../interfaces/clientresource.md).[client](../interfaces/clientresource.md#client)*
 
-*Defined in [loans.ts:4](https://github.com/mainanick/kwara/blob/286defe/lib/loans.ts#L4)*
+Defined in loans.ts:4
 
 ## Methods
 
@@ -57,7 +57,7 @@ Name | Type |
 
 ▸ **get**(`loanProductId`: string): *Promise‹Response‹››*
 
-*Defined in [loans.ts:17](https://github.com/mainanick/kwara/blob/286defe/lib/loans.ts#L17)*
+Defined in loans.ts:17
 
 Show an available loan product
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **products**(): *Promise‹Response‹››*
 
-*Defined in [loans.ts:11](https://github.com/mainanick/kwara/blob/286defe/lib/loans.ts#L11)*
+Defined in loans.ts:11
 
 List available loan products
 

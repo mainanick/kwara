@@ -27,7 +27,7 @@
 
 • **DEFAULT_API_URL**: *"api.kwara.com"* = "api.kwara.com"
 
-*Defined in [index.ts:7](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L7)*
+Defined in index.ts:7
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 • **DEFAULT_API_VERSION**: *"v1"* = "v1"
 
-*Defined in [index.ts:9](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L9)*
+Defined in index.ts:9
 
 ___
 
@@ -43,4 +43,4 @@ ___
 
 • **DEFAULT_SANBOX_API_URL**: *"api.sandbox.kwara.com"* = "api.sandbox.kwara.com"
 
-*Defined in [index.ts:8](https://github.com/mainanick/kwara/blob/286defe/lib/index.ts#L8)*
+Defined in index.ts:8
