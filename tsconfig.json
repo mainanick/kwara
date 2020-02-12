@@ -6,7 +6,7 @@
     "importHelpers": true,
     "esModuleInterop": true,
     "outDir": "dist",
-    "declaration": false,
+    "declaration": true,
     "module": "commonjs",
     "rootDir": "lib",
     "strict": true,
@@ -16,5 +16,5 @@
     "noFallthroughCasesInSwitch": true,
     "skipLibCheck": true,
     "target": "ES5"
-  }
+  },
 }

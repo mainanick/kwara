@@ -1,9 +1,12 @@
 {
   "name": "kwara",
+  "version": "0.0.1",
   "author": {
     "name": "mainanick",
     "url": "https://github.com/mainanick/kwara"
   },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
     "node-fetch": "^2.6.0"
   },
@@ -22,12 +25,12 @@
     "typescript": "^3.7.5"
   },
   "scripts": {
-    "prepare": "tsc -p tsconfig.json",
     "build": "tsc -p tsconfig.json",
     "lint": "prettier --write */**/*.{ts,tsx,js,tsx}",
     "test": "yarn build && jest --rootDir . --projects .",
     "start": "tsc -p tsconfig.json --watch",
-    "docs": "typedoc --out docs --plugin typedoc-plugin-markdown  lib"
+    "docs": "typedoc --out docs --plugin typedoc-plugin-markdown lib",
+    "prepublish": "tsc -p tsconfig.json"
   },
   "husky": {
     "hooks": {
