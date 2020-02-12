@@ -3,7 +3,7 @@
   "compilerOptions": {
     "allowJs": true,
     "jsx": "react",
-    "importHelpers": true,
+    "importHelpers": false,
     "esModuleInterop": true,
     "outDir": "dist",
     "declaration": true,
