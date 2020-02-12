@@ -4,12 +4,12 @@
     "url": "https://github.com/mainanick/kwara"
   },
   "dependencies": {
-    "@types/node-fetch": "^2.5.4",
     "node-fetch": "^2.6.0"
   },
   "devDependencies": {
     "@types/jest": "^25.1.2",
     "@types/node": "^13.7.1",
+    "@types/node-fetch": "^2.5.4",
     "chokidar": "^3.3.1",
     "husky": "^4.2.2",
     "jest": "^25.1.0",
