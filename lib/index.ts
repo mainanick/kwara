@@ -1,4 +1,6 @@
+import { EventEmitter } from 'events';
 import fetch, { RequestInit } from 'node-fetch';
+
 import Members from './member';
 import { Client } from './types';
 
@@ -11,6 +13,7 @@ class Kwara implements Client {
   public clientId: string;
   public clientSecret: string;
   public live: boolean;
+  public emitter: EventEmitter;
   public members: Members;
   public options: Client['options'];
 
@@ -24,6 +27,7 @@ class Kwara implements Client {
     this.clientId = clientId;
     this.clientSecret = clientSecret;
     this.live = live;
+    this.emitter = new EventEmitter();
     this.members = new Members(this);
   }
   get url() {
@@ -32,23 +36,29 @@ class Kwara implements Client {
     }
     return DEFAULT_SANBOX_API_URL;
   }
+  on(event: string, listeners: (...args: any[]) => any) {
+    this.emitter.on(event, listeners);
+  }
   getContentType() {
     return `application/vnd.kwara.${this.options.version}+json`;
   }
   requestAccessToken() {
     const contentType = this.getContentType();
-    return fetch(this.url + '/oauth/token', {
+    const body = {
+      grant_type: 'client_credentials',
+      client_id: this.clientId,
+      client_secret: this.clientSecret,
+    };
+    this.emitter.emit('request', { type: 'accesstoken', ...body });
+    const res = fetch(this.url + '/oauth/token', {
       method: 'POST',
       headers: {
         Accept: contentType,
         'Content-Type': contentType,
       },
-      body: JSON.stringify({
-        grant_type: 'client_credentials',
-        client_id: this.clientId,
-        client_secret: this.clientSecret,
-      }),
+      body: JSON.stringify(body),
     });
+    return res;
   }
 
   request(

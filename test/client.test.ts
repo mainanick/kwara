@@ -2,7 +2,8 @@ import Kwara from '../lib';
 import Members from '../lib/member';
 
 function getNewClient() {
-  return new Kwara('cid', 'csk');
+  const client = new Kwara('cid', 'csk');
+  return client;
 }
 
 test('', () => {
