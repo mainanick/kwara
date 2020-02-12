@@ -18,6 +18,7 @@
     "ts-jest": "^25.2.0",
     "tslib": "^1.10.0",
     "typedoc": "^0.16.9",
+    "typedoc-plugin-markdown": "^2.2.16",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -26,7 +27,7 @@
     "lint": "prettier --write */**/*.{ts,tsx,js,tsx}",
     "test": "yarn build && jest --rootDir . --projects .",
     "start": "tsc -p tsconfig.json --watch",
-    "docs": "typedoc --out docs lib"
+    "docs": "typedoc --out docs --plugin typedoc-plugin-markdown  lib"
   },
   "husky": {
     "hooks": {
