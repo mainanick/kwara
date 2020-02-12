@@ -28,7 +28,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged --pattern '!test/tests/lint/**' && yarn lint && doctoc README.md"
+      "pre-commit": "yarn lint"
     }
   },
   "prettier": {
