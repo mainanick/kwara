@@ -1,6 +1,6 @@
 ```ts
 import Kwara from 'kwara';
-const kwara = new Kwara('tk' /*Token*/, 'sk' /*Secret Key*/);
+const kwara = new Kwara('cid', 'csk');
 const members = kwara.members.list(); // Promise<[Member]>
 const members = kwara.members.list((err, members){
   console.log(members)
