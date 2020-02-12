@@ -1,6 +1,6 @@
 {
   "name": "kwara",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "mainanick",
     "url": "https://github.com/mainanick/kwara"
@@ -30,7 +30,7 @@
     "test": "yarn build && jest --rootDir . --projects .",
     "start": "tsc -p tsconfig.json --watch",
     "docs": "typedoc --out docs --plugin typedoc-plugin-markdown lib",
-    "prepublish": "tsc -p tsconfig.json"
+    "prepare": "tsc -p tsconfig.json"
   },
   "husky": {
     "hooks": {
