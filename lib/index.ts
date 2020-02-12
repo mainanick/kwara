@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events';
-import fetch, { RequestInit } from 'node-fetch';
+import fetch from 'node-fetch';
 
 import Members from './member';
 import { Client } from './types';
@@ -61,11 +61,14 @@ class Kwara implements Client {
     return res;
   }
 
-  request(
-    uri: string = 'POST',
-    requestOptions: RequestInit | undefined = undefined
-  ) {
+  request(uri: string, requestOptions = undefined) {
     return fetch(uri, requestOptions);
+  }
+  requestGet(uri: string, requestOptions = {}) {
+    return fetch(uri, { method: 'GET', ...requestOptions });
+  }
+  requestPost(uri: string, requestOptions = {}) {
+    return fetch(uri, { method: 'POST', ...requestOptions });
   }
 }
 
