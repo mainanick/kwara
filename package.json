@@ -17,6 +17,7 @@
     "prettier": "^1.19.1",
     "ts-jest": "^25.2.0",
     "tslib": "^1.10.0",
+    "typedoc": "^0.16.9",
     "typescript": "^3.7.5"
   },
   "scripts": {
@@ -24,11 +25,12 @@
     "build": "tsc -p tsconfig.json",
     "lint": "prettier --write */**/*.{ts,tsx,js,tsx}",
     "test": "yarn build && jest --rootDir . --projects .",
-    "start": "tsc -p tsconfig.json --watch"
+    "start": "tsc -p tsconfig.json --watch",
+    "docs": "typedoc --out docs lib"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn lint && yarn docs"
     }
   },
   "prettier": {

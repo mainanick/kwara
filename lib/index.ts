@@ -6,8 +6,7 @@ import { Client } from './types';
 
 export const DEFAULT_API_URL = 'api.kwara.com';
 export const DEFAULT_SANBOX_API_URL = 'api.sandbox.kwara.com';
-export const DEFAULT_BASE_PATH = '/v1/';
-export const DEFAULT_API_VERSION = null;
+export const DEFAULT_API_VERSION = 'v1';
 
 class Kwara implements Client {
   public clientId: string;
@@ -21,7 +20,7 @@ class Kwara implements Client {
     clientId: string,
     clientSecret: string,
     live: boolean = false,
-    clientOptions = { version: 'v1' }
+    clientOptions = { version: DEFAULT_API_VERSION }
   ) {
     this.options = clientOptions;
     this.clientId = clientId;
