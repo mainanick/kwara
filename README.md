@@ -1,6 +1,10 @@
 # Kwara Node.js Library
 ## Not Complete.
 
+```
+yarn add kwara
+```
+
 ```ts
 import Kwara from 'kwara';
 const kwara = new Kwara('cid', 'csk');
